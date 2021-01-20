@@ -324,6 +324,8 @@ namespace TestProject.OpenSDK.Internal.Rest
 
             startSessionRequest.AddJsonBody(json);
 
+            Logger.Info($"Start session: {json}");
+
             IRestResponse startSessionResponse = this.client.Execute(startSessionRequest);
 
             if ((int)startSessionResponse.StatusCode >= 400)
