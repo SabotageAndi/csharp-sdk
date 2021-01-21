@@ -33,4 +33,8 @@
     <ProjectReference Include="..\TestProject.OpenSDK\TestProject.OpenSDK.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="build\**" Pack="True" PackagePath="build\" />
+  </ItemGroup>
+
 </Project>
